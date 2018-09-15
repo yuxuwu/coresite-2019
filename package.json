@@ -1,0 +1,18 @@
+{
+	"name": "coresite-2019",
+	"version": "1.0.0",
+	"description": "CoRE's Homepage 2019 Edition",
+	"main": "app.js",
+	"scripts": {
+		"build:css": "node-sass-chokidar public/sass/ -o public/css/",
+		"watch:css": "npm run build:css && node-sass-chokidar public/sass/ -o public/css/ --watch --recursive",
+		"start": "node app.js"
+	},
+	"author": "Yu Xuan Wu",
+	"license": "ISC",
+	"dependencies": {
+		"ejs": "^2.5.9",
+		"express": "^4.16.3",
+		"node-sass-chokidar": "^1.3.3"
+	}
+}

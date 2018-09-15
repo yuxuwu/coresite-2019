@@ -1,0 +1,39 @@
+.header {
+	position: relative;
+	height: 100vh;
+
+	&__background {
+		position: fixed;
+		z-index: -1;
+		background-image: url(../img/hero2.jpg);
+		background-size: cover;
+		background-position: 50% 10%;
+		width: 100%;
+		height: 100%;
+		filter: brightness(.5);
+		transform: scale(1.2);
+
+		&::before {
+			position: absolute;
+			content:"";
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to bottom, rgba(#333, .9) 5%, rgba($color-primary, .8) 100%);
+		}
+	}
+
+	&__headings {
+		position: absolute;
+		left: 7rem;
+		bottom: 7rem;
+	}
+
+	&__cta-container {
+		position: absolute;
+		width: 50rem;
+		right: 10rem;
+		bottom: 8rem;
+		color: #ccc;
+		text-align: right;
+	}
+}

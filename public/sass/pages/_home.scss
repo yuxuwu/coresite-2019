@@ -1,0 +1,65 @@
+.section-about {
+	padding: 15rem 15rem;
+	background-color: white;
+	background-image: url(../img/geometry2.png);
+	background-repeat: repeat;
+}
+
+.about {
+	&__container {
+		display: flex;
+	}
+
+	&__texts { 
+		filter: drop-shadow(0 0 0.75em white);
+	}
+
+	&__images {
+		flex-basis: 100%;
+		position: relative;
+	}
+
+	&__photo {
+		position: absolute;
+		width: 60%;
+		box-shadow: 0 1.5rem 3rem rgba(black, .2);
+		transition: all .2s;
+		outline-offset: 2rem;
+		border-radius: 2px;
+
+		&--1 {
+			top: 15%;
+			left: 50%;
+		}
+
+		&--2 {
+			top: 30%;
+			left: 35%;
+		}
+
+		&--3 {
+			top: 45%;
+			left: 20%;
+		}
+
+		&:hover {
+			outline: 1.5rem solid $color-primary;
+			transform: scale(1.05) translateY(-.5rem);
+			box-shadow: 0 2.5rem 4rem rgba(black, .2);
+			z-index: 20;
+		}
+
+		&:hover &__photo:not(:hover) {
+			transform: scale(.95);
+		}
+	}
+}
+
+.section-traditions {
+	padding: 10rem 10rem 0 10rem;
+
+	text-align: center;
+	background-color: white;
+	background-repeat: repeat;
+}
+

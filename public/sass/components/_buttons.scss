@@ -1,0 +1,13 @@
+.cta,
+.cta:link,
+.cta:visited {
+	display: inline-block;
+	padding: 2rem 2rem;
+	border-radius: 40rem;
+	background-color: $color-primary;
+	width: 38rem;
+	text-align: center;
+	font-size: 2.8rem;
+	text-decoration: none;
+	color: white;
+}
