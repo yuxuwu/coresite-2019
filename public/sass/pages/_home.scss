@@ -1,6 +1,6 @@
 .section-about {
 	padding: 15rem 15rem;
-	background-color: white;
+	background-color: $color-white;
 	background-image: url(../img/geometry2.png);
 	background-repeat: repeat;
 }
@@ -11,7 +11,7 @@
 	}
 
 	&__texts { 
-		filter: drop-shadow(0 0 0.75em white);
+		filter: drop-shadow(0 0 0.75em $color-white);
 	}
 
 	&__images {
@@ -56,10 +56,28 @@
 }
 
 .section-traditions {
-	padding: 10rem 10rem 0 10rem;
+	padding: 5rem 10rem 10rem 10rem;
 
 	text-align: center;
-	background-color: white;
+	background-image: linear-gradient(to bottom, rgba($color-primary-dark, .8), rgba($color-primary-darker, .5)), url("../img/1262.jpg");
 	background-repeat: repeat;
 }
 
+.section-traditions-sub {
+	margin-top: -5rem;	
+	text-align: center;
+	background-color: white;
+}
+
+.final-cta {
+	color: white;
+	height: 100vh;
+	background-color: $color-primary-darker;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& > div {
+		margin: 1rem;
+	}
+}
