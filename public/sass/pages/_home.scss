@@ -70,14 +70,23 @@
 }
 
 .final-cta {
-	color: white;
 	height: 100vh;
 	background-color: $color-primary-darker;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
+	&-container {
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 80%;
 
-	& > div {
-		margin: 1rem;
+		& > div {
+			margin: 1rem;
+		}
+	}
+	&-text {
+		text-align: center;
 	}
 }
+

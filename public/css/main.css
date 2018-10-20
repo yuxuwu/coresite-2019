@@ -16,17 +16,35 @@
 .u-margin-bottom-md {
   margin-bottom: 4rem !important; }
 
+.u-margin-bottom-lg {
+  margin-bottom: 6rem !important; }
+
 .u-margin-top-sm {
   margin-top: 1.5rem !important; }
 
 .u-margin-top-md {
   margin-top: 4rem !important; }
 
+.u-margin-top-lg {
+  margin-top: 6rem !important; }
+
 .u-padding-top-sm {
   padding-top: 1.5rem !important; }
 
 .u-padding-top-md {
   padding-top: 4rem !important; }
+
+.u-padding-top-lg {
+  padding-top: 6rem !important; }
+
+.u-padding-bottom-sm {
+  padding-bottom: 1.5rem !important; }
+
+.u-padding-bottom-md {
+  padding-bottom: 4rem !important; }
+
+.u-padding-bottom-lg {
+  padding-bottom: 6rem !important; }
 
 .u-txt-shadow {
   text-shadow: 2px 2px 4px #222 !important; }
@@ -334,11 +352,17 @@ body {
   background-color: white; }
 
 .final-cta {
-  color: white;
   height: 100vh;
   background-color: #0a2c46;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .final-cta > div {
-    margin: 1rem; }
+  flex-direction: column; }
+  .final-cta-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 80%; }
+    .final-cta-container > div {
+      margin: 1rem; }
+  .final-cta-text {
+    text-align: center; }
