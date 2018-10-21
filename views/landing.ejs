@@ -1,8 +1,81 @@
 <% include partials/header %>
+
+<div class="modal" id="contacts-modal">
+	<div class="contacts">
+		<div class="contacts__top-row">
+			<h1 class="heading1 u-color-primary">contacts</h1>
+			<span class="modal__close">&larr;</span>
+		</div>
+		<div class="contacts__items">
+			<div class="contacts__item">
+				<img src="" alt="Sam Kustin" class="contacts__img">
+				<div class="contacts__info">
+					<h2 class="heading2">Sam Kustin</h2>
+					<h3 class="heading3">President</h3>
+					<p class="paragraph">Links and Info</p>
+				</div>
+			</div>
+			<div class="contacts__item">
+				<img src="" alt="Michelle Tan" class="contacts__img">
+				<div class="contacts__info">
+					<h2 class="heading2">Michelle Tan</h2>
+					<h3 class="heading3">Vice President</h3>
+					<p class="paragraph">Links and Info</p>
+				</div>
+			</div>
+			<div class="contacts__item">
+				<img src="" alt="Henry Burns" class="contacts__img">
+				<div class="contacts__info">
+					<h2 class="heading2">Henry Burns</h2>
+					<h3 class="heading3">Treasurer</h3>
+					<p class="paragraph">Links and Info</p>
+				</div>
+			</div>
+			<div class="contacts__item">
+				<img src="" alt="Mary Mahoney" class="contacts__img">
+				<div class="contacts__info">
+					<h2 class="heading2">Mary Mahoney</h2>
+					<h3 class="heading3">Secretary</h3>
+					<p class="paragraph">Links and Info</p>
+				</div>
+			</div>
+			<div class="contacts__item">
+				<img src="../img/contact-yu.jpeg" alt="Yu Xuan Wu" class="contacts__img">
+				<div class="contacts__info">
+					<h2 class="heading2">Yu Xuan Wu</h2>
+					<h3 class="heading3">Systems Administrator</h3>
+					<div class="contacts__links">
+						<a href="mailto:ywu148@binghamton.edu" class="contacts__link">ywu148@binghamton.edu</a>
+					</div>
+				</div>
+			</div>
+			<div class="contacts__item">
+				<img src="" alt="Nicholas Stecyna" class="contacts__img">
+				<div class="contacts__info">
+					<h2 class="heading2">Nicholas Stecyna</h2>
+					<h3 class="heading3">CoREtex Manager</h3>
+					<p class="paragraph">Links and Info</p>
+				</div>
+			</div>
+			<div class="contacts__item">
+				<img src="" alt="Nicole Ruiz Torres" class="contacts__img">
+				<div class="contacts__info">
+					<h2 class="heading2">Nicole Ruiz Torres</h2>
+					<h3 class="heading3">Freshman Representative</h3>
+					<p class="paragraph">Links and Info</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="dead-modal">
+</div>
+
 <header class="header">
 	<div class="header__background"></div>
 	<div class="header__headings">
-		<h1 class="heading1 heading1--primary">we are</h1>
+		<h1 class="heading1 heading1--primary u-color-gray">we are</h1>
 		<h1 class="heading1 heading1--secondary">the future.</h1>
 	</div>
 	<div class="header__cta-container">
@@ -82,32 +155,32 @@
 		<div class="card-sm">
 			<div class="card-sm__text">
 				<h4 class="heading4">Escape the Room</h4>
-				<h4 class="heading4 u-color-gray">October 28st</h4>
+				<h4 class="heading4 u-color-gray-dark">October 28st</h4>
 				<p class="paragraph">The gang builds an Escape the Room. It goes horribly wrong.</p>
 			</div>
 			<div class="card-sm__background card-sm__background--1"></div>
 		</div>
 		<div class="card-sm">
 			<div class="card-sm__text">
-				<h4 class="heading4">Python Workshops</h4>
-				<h4 class="heading4 u-color-gray">October 12th, February 12th</h4>
-				<p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				<h4 class="heading4">Secret Snowflake</h4>
+				<h4 class="heading4 u-color-gray-dark">December</h4>
+				<p class="paragraph">Christmas wouldn't be complete without presents!</p>
 			</div>
 			<div class="card-sm__background card-sm__background--2"></div>
 		</div>
 		<div class="card-sm">
 			<div class="card-sm__text">
-				<h4 class="heading4">Thing here</h4>
-				<h4 class="heading4 u-color-gray">Date bois</h4>
-				<p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				<h4 class="heading4">Midnight Denny's Runs</h4>
+				<h4 class="heading4 u-color-gray-dark">Whenever we want</h4>
+				<p class="paragraph">Yup.</p>
 			</div>
 			<div class="card-sm__background card-sm__background--3"></div>
 		</div>			
 		<div class="card-sm">
 			<div class="card-sm__text">
-				<h4 class="heading4">Midnight Denny's Runs</h4>
-				<h4 class="heading4 u-color-gray">Whenever we want</h4>
-				<p class="paragraph">Yup.</p>
+				<h4 class="heading4">Senior Sendoff</h4>
+				<h4 class="heading4 u-color-gray-dark">May</h4>
+				<p class="paragraph">Saying goodbye to our soon-to-be alumni!</p>
 			</div>
 			<div class="card-sm__background card-sm__background--4"></div>
 		</div>
@@ -127,9 +200,40 @@
 	</div>
 	<div class="final-cta-text">
 		<h3 class="heading3 u-color-white">We're not done yet!</h3>
-		<p class="paragraph u-color-white">Our new website is still under construction. Stay tuned for more!</p>
+		<p class="paragraph u-color-white">Our new website is still under pretty-fication. Stay tuned for more!</p>
 	</div>
 </section>
 </main>
+
+<script>
+	var contactModal = document.querySelector("#contacts-modal");
+	var deadModal = document.querySelector("#deadModal");
+
+	var modals = {
+		"contacts": contactModal,
+		"dead": deadModal,
+	};
+
+	var currentModal = "";
+
+	Array.prototype.map.call(
+		document.getElementsByClassName("modal__close"), 
+		ele => {
+			ele.onclick = turnOffModal;
+		}
+	);
+
+	function turnOnModal(e, target) {
+		modals[target].classList.toggle("show-modal");
+		currentModal = target;
+		e.preventDefault();
+	}
+
+	function turnOffModal() {
+		modals[currentModal].classList.toggle("show-modal");
+		currentModal = "";
+	}
+
+</script>
 
 <% include partials/footer %>

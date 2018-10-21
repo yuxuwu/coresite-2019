@@ -82,6 +82,7 @@
 		background-size: cover;
 		&--1 {
 			background-image: linear-gradient(to right bottom, rgba($color-card-1--light, .8), rgba($color-card-1, .5)), url(../img/corehacks.jpg);
+			background-position: translateY();
 		}
 		&--2 {
 			background-image: linear-gradient(to left bottom, rgba($color-card-2--light, .8), rgba($color-card-2, .5)), url(../img/corelore.jpg);
@@ -97,7 +98,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	padding: 4rem;
+	padding: 2rem 4rem 4rem 4rem;
 
 	& > .card-sm {
 		flex-basis: calc(50% - 4rem);
@@ -120,13 +121,32 @@
 		flex-direction: column;
 		width: 35%;
 		height: 100%;
-		right: 6px;
+		right: .6rem;
 	}
-	  
+
 	&__background {
-		background-color: limegreen;
 		height: 100%;
 		width: 100%;
 		clip-path: polygon(0 0, 65% 0, 50% 100%, 0 100%);
+		background-size: cover;
+		&--1 {
+			background-image: url(../img/escapetheroom.jpg);
+			background-position-x: -6rem;
+			background-position-y: -10rem;
+		}
+		&--2 {
+			background-image: url(../img/secretsnowflake.jpg);
+			background-position-x: -6rem;
+			background-position-y: -25rem;
+		}
+		&--3 {
+			background-image: url(../img/2amdennys.jpg);
+			background-position-y: -18rem;
+		}
+		&--4 {
+			background-image: url(../img/seniorsendoff.jpg);
+			background-position-x: -6rem;
+			background-position-y: -8rem;
+		}
 	}
 }

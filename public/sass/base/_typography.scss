@@ -9,12 +9,13 @@ body {
 	color: $color-black;
 }
 
+// Use em instead of rem for text so they can be adjusted as well
+
 .heading1 {
-	font-size: 4rem;
+	font-size: 4em;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 4.5rem;
-	color: #ddd;
 	&--primary {
 
 	}
@@ -25,21 +26,21 @@ body {
 }
 
 .heading2 {
-	font-size: 3.4rem;
+	font-size: 3.4em;
 	font-weight: 400;
 	letter-spacing: 4px;
 }
 
 .heading3 {
-	font-size: 2.2rem;
+	font-size: 2.2em;
 	font-weight: 400;
 }
 
 .heading4 {
-	font-size: 1.7rem;
+	font-size: 1.7em;
 	font-weight: 400;
 }
 
 .paragraph {
-	font-size: 1.6rem;
+	font-size: 1.6em;
 }
