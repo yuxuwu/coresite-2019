@@ -245,33 +245,49 @@ body {
   visibility: hidden;
   opacity: 0;
   transform: scale(1.1); }
-  .modal .modal__close {
+  .modal__close {
     width: 1.5em;
     font-size: 3.5em;
     text-align: center;
     cursor: pointer; }
+  .modal__top-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 5em; }
 
 .contacts {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150em;
-  height: 70em;
+  width: 80%;
+  min-width: 40em;
+  height: 60em;
+  max-height: 90%;
   background-color: white;
   border-radius: .5em;
   overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column; }
-  .contacts__top-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 2em 5em; }
   .contacts__img {
     width: 12em;
     height: 12em;
-    border-radius: 50%;
     margin: 2em; }
+    .contacts__img--boy {
+      border-radius: 30% 70% 47% 53% / 41% 8% 92% 59%; }
+    .contacts__img--bubb {
+      border-radius: 30% 70% 65% 35% / 50% 54% 46% 50%; }
+    .contacts__img--dash {
+      border-radius: 30% 70% 15% 85% / 65% 16% 84% 35%; }
+    .contacts__img--dia {
+      border-radius: 25% 75% 25% 75% / 75% 25% 75% 25%; }
+    .contacts__img--leaf {
+      border-radius: 93% 7% 47% 53% / 100% 46% 54% 0%; }
+    .contacts__img--pick {
+      border-radius: 100% 0% 14% 86% / 68% 32% 68% 32%; }
+    .contacts__img--pilw {
+      border-radius: 82% 18% 86% 14% / 41% 80% 20% 59%; }
   .contacts__items {
     display: flex;
     flex-direction: column; }
@@ -291,6 +307,17 @@ body {
   visibility: visible;
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; }
+
+.dead {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  min-width: 40em;
+  height: 60em;
+  max-height: 90%;
+  background-color: white; }
 
 .embedded-video {
   width: 56rem;

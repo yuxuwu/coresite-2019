@@ -2,21 +2,24 @@
 
 <div class="modal" id="contacts-modal">
 	<div class="contacts">
-		<div class="contacts__top-row">
+		<div class="modal__top-row">
 			<h1 class="heading1 u-color-primary">contacts</h1>
 			<span class="modal__close">&larr;</span>
 		</div>
 		<div class="contacts__items">
 			<div class="contacts__item">
-				<img src="" alt="Sam Kustin" class="contacts__img">
+				<img src="../img/contact-sam.jpeg" alt="Sam Kustin" class="contacts__img contacts__img--dash">
 				<div class="contacts__info">
 					<h2 class="heading2">Sam Kustin</h2>
 					<h3 class="heading3">President</h3>
-					<p class="paragraph">Links and Info</p>
+					<div class="contacts__links">
+						<a href="mailto:skustin1@binghamton.edu" class="contacts__link">skustin1@binghamton.edu</a>
+					</div>
+				</div>
 				</div>
 			</div>
 			<div class="contacts__item">
-				<img src="" alt="Michelle Tan" class="contacts__img">
+				<img src="" alt="Michelle Tan" class="contacts__img contacts__img--bubb">
 				<div class="contacts__info">
 					<h2 class="heading2">Michelle Tan</h2>
 					<h3 class="heading3">Vice President</h3>
@@ -24,7 +27,7 @@
 				</div>
 			</div>
 			<div class="contacts__item">
-				<img src="" alt="Henry Burns" class="contacts__img">
+				<img src="" alt="Henry Burns" class="contacts__img contacts__img--boy">
 				<div class="contacts__info">
 					<h2 class="heading2">Henry Burns</h2>
 					<h3 class="heading3">Treasurer</h3>
@@ -32,7 +35,7 @@
 				</div>
 			</div>
 			<div class="contacts__item">
-				<img src="" alt="Mary Mahoney" class="contacts__img">
+				<img src="" alt="Mary Mahoney" class="contacts__img contacts__img--pilw">
 				<div class="contacts__info">
 					<h2 class="heading2">Mary Mahoney</h2>
 					<h3 class="heading3">Secretary</h3>
@@ -40,7 +43,7 @@
 				</div>
 			</div>
 			<div class="contacts__item">
-				<img src="../img/contact-yu.jpeg" alt="Yu Xuan Wu" class="contacts__img">
+				<img src="../img/contact-yu.jpeg" alt="Yu Xuan Wu" class="contacts__img contacts__img--dia">
 				<div class="contacts__info">
 					<h2 class="heading2">Yu Xuan Wu</h2>
 					<h3 class="heading3">Systems Administrator</h3>
@@ -50,7 +53,7 @@
 				</div>
 			</div>
 			<div class="contacts__item">
-				<img src="" alt="Nicholas Stecyna" class="contacts__img">
+				<img src="" alt="Nicholas Stecyna" class="contacts__img contacts__img--pick">
 				<div class="contacts__info">
 					<h2 class="heading2">Nicholas Stecyna</h2>
 					<h3 class="heading3">CoREtex Manager</h3>
@@ -58,11 +61,13 @@
 				</div>
 			</div>
 			<div class="contacts__item">
-				<img src="" alt="Nicole Ruiz Torres" class="contacts__img">
+				<img src="../img/contact-nicole.jpeg" alt="Nicole Ruiz Torres" class="contacts__img contacts__img--leaf">
 				<div class="contacts__info">
 					<h2 class="heading2">Nicole Ruiz Torres</h2>
 					<h3 class="heading3">Freshman Representative</h3>
-					<p class="paragraph">Links and Info</p>
+					<div class="contacts__links">
+						<a href="mailto:nruizto1@binghamton.edu" class="contacts__link">nruizto1@binghamton.edu</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -70,6 +75,15 @@
 </div>
 
 <div class="modal" id="dead-modal">
+	<div class="dead">
+		<div class="modal__top-row">
+			<h1 class="heading1 u-color-primary">woopsie!</h1>
+			<span class="modal__close">&larr;</span>
+		</div>
+		<div class="dead__contents">
+			<img src="../img/corevo.svg" class="dead__corevo" alt="CoREVO">
+		</div>
+	</div>
 </div>
 
 <header class="header">
@@ -207,7 +221,7 @@
 
 <script>
 	var contactModal = document.querySelector("#contacts-modal");
-	var deadModal = document.querySelector("#deadModal");
+	var deadModal = document.querySelector("#dead-modal");
 
 	var modals = {
 		"contacts": contactModal,
