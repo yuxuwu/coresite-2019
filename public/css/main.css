@@ -253,7 +253,8 @@ body {
   .modal__top-row {
     display: flex;
     justify-content: space-between;
-    margin: 2em 5em; }
+    padding: 2em 5em;
+    max-height: 10%; }
 
 .contacts {
   position: absolute;
@@ -318,6 +319,15 @@ body {
   height: 60em;
   max-height: 90%;
   background-color: white; }
+  .dead__contents {
+    height: 90%;
+    display: flex;
+    align-items: center; }
+  .dead__corevo {
+    width: 275px;
+    height: auto; }
+  .dead__text {
+    flex-grow: 1; }
 
 .embedded-video {
   width: 56rem;

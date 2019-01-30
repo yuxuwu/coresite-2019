@@ -24,7 +24,8 @@
 	&__top-row {
 		display: flex;
 		justify-content: space-between;
-		margin: 2em 5em;
+		padding: 2em 5em;
+		max-height: 10%;
 	}
 }
 
@@ -129,4 +130,20 @@
 	max-height: 90%;
 
 	background-color: $color-white;
+
+	&__contents {
+		height: 90%;
+
+		display: flex;
+		align-items: center;
+	}
+
+	&__corevo {
+		width: 275px;
+		height: auto;
+	}
+
+	&__text {
+		flex-grow: 1;
+	}
 }
