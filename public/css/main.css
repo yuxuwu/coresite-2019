@@ -401,7 +401,8 @@ body {
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center; } }
+      justify-content: center;
+      align-items: center; } }
   .header__headings {
     position: absolute;
     left: 7rem;
@@ -412,7 +413,8 @@ body {
         left: 0;
         bottom: 0;
         text-align: center;
-        margin-bottom: 4rem; } }
+        margin-bottom: 4rem;
+        max-width: 45rem; } }
   .header__cta-container {
     position: absolute;
     width: 50rem;
@@ -462,16 +464,24 @@ body {
   background-color: white;
   background-image: url(../img/geometry2.png);
   background-repeat: repeat; }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding: 8rem 2rem; } }
 
 .about__container {
   display: flex; }
+  @media (max-width: 37.5em) {
+    .about__container {
+      flex-direction: column; } }
 
 .about__texts {
   filter: drop-shadow(0 0 0.75em white); }
 
 .about__images {
   flex-basis: 100%;
-  position: relative; }
+  position: relative;
+  padding: 3rem;
+  margin-top: 6rem; }
 
 .about__photo {
   position: absolute;
@@ -480,15 +490,37 @@ body {
   transition: all .2s;
   outline-offset: 2rem;
   border-radius: 2px; }
+  @media (max-width: 37.5em) {
+    .about__photo {
+      float: left;
+      position: relative;
+      width: 33.3333333%;
+      box-shadow: 0 1.5rem 3rem rgba(34, 33, 39, 0.2); } }
   .about__photo--1 {
     top: 15%;
     left: 50%; }
+    @media (max-width: 37.5em) {
+      .about__photo--1 {
+        top: 1rem;
+        transform: scale(1.2);
+        left: 0; } }
   .about__photo--2 {
     top: 30%;
     left: 35%; }
+    @media (max-width: 37.5em) {
+      .about__photo--2 {
+        top: -1rem;
+        transform: scale(1.3);
+        z-index: 100;
+        left: 0; } }
   .about__photo--3 {
     top: 45%;
     left: 20%; }
+    @media (max-width: 37.5em) {
+      .about__photo--3 {
+        top: 1rem;
+        left: 0;
+        transform: scale(1.2); } }
   .about__photo:hover {
     outline: 1.5rem solid #29A8E0;
     transform: scale(1.05) translateY(-0.5rem);
