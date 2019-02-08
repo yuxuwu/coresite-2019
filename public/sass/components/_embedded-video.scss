@@ -3,3 +3,13 @@
 	height: 31.5rem;
 	box-shadow: 0 1rem 2rem rgba(black, 0.5);
 }
+
+#video {
+	width: 560; 
+	height: 315;
+
+	@include respond(phone) {
+		width: 300;
+		height: 168;
+	}
+}

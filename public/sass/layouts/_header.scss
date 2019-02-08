@@ -22,10 +22,27 @@
 		}
 	}
 
+	&__text {
+		@include respond(phone) {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
 	&__headings {
 		position: absolute;
 		left: 7rem;
 		bottom: 7rem;
+
+		@include respond(phone) {
+			position: relative;
+			left: 0;
+			bottom: 0;
+			text-align: center;
+			margin-bottom: 4rem;
+		}
 	}
 
 	&__cta-container {
@@ -35,5 +52,13 @@
 		bottom: 8rem;
 		color: #ccc;
 		text-align: right;
+
+		@include respond(phone) {
+			position: relative;
+			right: 0;
+			bottom: 0;
+			width: auto;
+			text-align: center;
+		}
 	}
 }

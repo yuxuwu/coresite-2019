@@ -35,4 +35,8 @@
 	&__logo {
 		width: 30rem;
 	}
+
+	@include respond(phone) {
+		display: none;
+	}
 }
