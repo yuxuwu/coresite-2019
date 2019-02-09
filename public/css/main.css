@@ -138,6 +138,11 @@ body {
   overflow: hidden;
   border-radius: .4rem;
   color: white; }
+  @media (max-width: 37.5em) {
+    .card {
+      display: flex;
+      flex-direction: column;
+      height: 76rem; } }
   .card__text {
     position: absolute;
     display: flex;
@@ -146,12 +151,25 @@ body {
     z-index: 5;
     width: 30%;
     height: 100%; }
+    @media (max-width: 37.5em) {
+      .card__text {
+        width: 100%;
+        position: relative;
+        flex-basis: 33%; } }
     .card__text--left {
       left: 3rem;
       text-align: left; }
+      @media (max-width: 37.5em) {
+        .card__text--left {
+          left: 0;
+          text-align: center; } }
     .card__text--right {
       right: 3rem;
       text-align: right; }
+      @media (max-width: 37.5em) {
+        .card__text--right {
+          right: 0;
+          text-align: center; } }
   .card__layer1 {
     position: absolute;
     z-index: 4;
@@ -159,10 +177,20 @@ body {
     width: 100%; }
     .card__layer1--left {
       background-color: #00487C;
+      -webkit-clip-path: polygon(0 0, 48% 0, 32% 100%, 0 100%);
       clip-path: polygon(0 0, 48% 0, 32% 100%, 0 100%); }
+      @media (max-width: 37.5em) {
+        .card__layer1--left {
+          -webkit-clip-path: polygon(0 50%, 100% 67%, 100% 100%, 0 100%);
+          clip-path: polygon(0 50%, 100% 67%, 100% 100%, 0 100%); } }
     .card__layer1--right {
       background-color: #3E6680;
+      -webkit-clip-path: polygon(52% 0, 100% 0, 100% 100%, 68% 100%);
       clip-path: polygon(52% 0, 100% 0, 100% 100%, 68% 100%); }
+      @media (max-width: 37.5em) {
+        .card__layer1--right {
+          -webkit-clip-path: polygon(0 67%, 100% 50%, 100% 100%, 0 100%);
+          clip-path: polygon(0 67%, 100% 50%, 100% 100%, 0 100%); } }
     .card__layer1-drop-shadow {
       position: absolute;
       z-index: 3;
@@ -172,11 +200,23 @@ body {
       .card__layer1-drop-shadow--left {
         left: .8rem;
         background-color: rgba(0, 72, 124, 0.5);
+        -webkit-clip-path: polygon(0 0, 48% 0, 32% 100%, 0 100%);
         clip-path: polygon(0 0, 48% 0, 32% 100%, 0 100%); }
+        @media (max-width: 37.5em) {
+          .card__layer1-drop-shadow--left {
+            left: 0;
+            -webkit-clip-path: polygon(0 45%, 100% 66%, 100% 100%, 0 100%);
+            clip-path: polygon(0 45%, 100% 66%, 100% 100%, 0 100%); } }
       .card__layer1-drop-shadow--right {
         right: .8rem;
         background-color: rgba(62, 102, 128, 0.5);
+        -webkit-clip-path: polygon(52% 0, 100% 0, 100% 100%, 68% 100%);
         clip-path: polygon(52% 0, 100% 0, 100% 100%, 68% 100%); }
+        @media (max-width: 37.5em) {
+          .card__layer1-drop-shadow--right {
+            right: 0;
+            -webkit-clip-path: polygon(0 66%, 100% 45%, 100% 100%, 0 100%);
+            clip-path: polygon(0 66%, 100% 45%, 100% 100%, 0 100%); } }
   .card__layer2 {
     position: absolute;
     z-index: 2;
@@ -184,17 +224,30 @@ body {
     width: 100%;
     background-color: transparent; }
     .card__layer2--left {
+      -webkit-clip-path: polygon(0 0, 50% 0, 40% 100%, 0 100%);
       clip-path: polygon(0 0, 50% 0, 40% 100%, 0 100%); }
+      @media (max-width: 37.5em) {
+        .card__layer2--left {
+          -webkit-clip-path: polygon(0 69%, 100% 42%, 100% 100%, 0 100%);
+          clip-path: polygon(0 67%, 100% 50%, 100% 100%, 0 100%); } }
     .card__layer2--right {
+      -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 60% 100%);
       clip-path: polygon(50% 0, 100% 0, 100% 100%, 60% 100%); }
+      @media (max-width: 37.5em) {
+        .card__layer2--right {
+          -webkit-clip-path: polygon(0 69%, 100% 42%, 100% 100%, 0 100%);
+          clip-path: polygon(0 67%, 100% 50%, 100% 100%, 0 100%); } }
   .card__background {
     position: absolute;
     height: 100%;
     width: 100%;
     background-size: cover; }
+    @media (max-width: 37.5em) {
+      .card__background {
+        position: relative;
+        flex-basis: 67%; } }
     .card__background--1 {
-      background-image: linear-gradient(to right bottom, rgba(0, 111, 192, 0.8), rgba(0, 72, 124, 0.5)), url(../img/corehacks.jpg);
-      background-position: translateY(); }
+      background-image: linear-gradient(to right bottom, rgba(0, 111, 192, 0.8), rgba(0, 72, 124, 0.5)), url(../img/corehacks.jpg); }
     .card__background--2 {
       background-image: linear-gradient(to left bottom, rgba(85, 138, 173, 0.8), rgba(62, 102, 128, 0.5)), url(../img/corelore.jpg); }
     .card__background--3 {
