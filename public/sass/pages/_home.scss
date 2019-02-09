@@ -110,6 +110,11 @@
 	background-color: $color-primary-darker;
 	display: flex;
 	flex-direction: column;
+
+	@include respond(phone) {
+		text-align: center;
+	}
+
 	&-container {
 		color: white;
 		display: flex;
@@ -117,8 +122,13 @@
 		align-items: center;
 		flex-basis: 80%;
 
+		@include respond(phone) {
+			flex-direction: column;
+		}
+
 		& > div {
 			margin: 1rem;
+			margin-top: 2rem;
 		}
 	}
 	&-text {

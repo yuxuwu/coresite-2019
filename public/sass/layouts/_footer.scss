@@ -4,11 +4,21 @@
 	display: flex;
 	align-items: center;
 
+	@include respond(phone) {
+		display: flex;
+		flex-direction: column;
+	}
+
 	&__logo-box {
 		flex: 1;
 		display: flex;
 		justify-content: center;
 		border-right: solid #666 1px;
+
+		@include respond(phone) {
+			border-right: initial;
+			border-bottom: solid #666 1px;
+		}
 	}
 
 	&__link,

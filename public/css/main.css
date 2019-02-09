@@ -448,11 +448,19 @@ body {
   height: 30rem;
   display: flex;
   align-items: center; }
+  @media (max-width: 37.5em) {
+    .footer {
+      display: flex;
+      flex-direction: column; } }
   .footer__logo-box {
     flex: 1;
     display: flex;
     justify-content: center;
     border-right: solid #666 1px; }
+    @media (max-width: 37.5em) {
+      .footer__logo-box {
+        border-right: initial;
+        border-bottom: solid #666 1px; } }
   .footer__link, .footer__link:link, .footer__link:visited {
     font-size: 1.8rem;
     text-decoration: none;
@@ -634,13 +642,20 @@ body {
   background-color: #0a2c46;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 37.5em) {
+    .final-cta {
+      text-align: center; } }
   .final-cta-container {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-basis: 80%; }
+    @media (max-width: 37.5em) {
+      .final-cta-container {
+        flex-direction: column; } }
     .final-cta-container > div {
-      margin: 1rem; }
+      margin: 1rem;
+      margin-top: 2rem; }
   .final-cta-text {
     text-align: center; }
