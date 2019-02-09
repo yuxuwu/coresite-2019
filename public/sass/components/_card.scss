@@ -179,6 +179,15 @@
 	border-radius: 4px;
 	overflow: hidden;
 
+	@include respond(phone) {
+		height: 20rem;
+	}
+
+	@include respond(phone) {
+		display: flex;
+		flex-direction: column;
+	}
+
 	&__text {
 		text-align: right;
 		position: absolute;
@@ -187,31 +196,67 @@
 		width: 35%;
 		height: 100%;
 		right: .6rem;
+
+		@include respond(phone) {
+			text-align: center;
+			position: relative;
+			width: 100%;
+			height: 40%;
+			right: 0;
+			flex-basis: 60%;
+		}
 	}
 
 	&__background {
+		position: relative;
 		height: 100%;
 		width: 100%;
 		clip-path: polygon(0 0, 65% 0, 50% 100%, 0 100%);
 		background-size: cover;
+		background-repeat: no-repeat;
+
+		@include respond(phone) {
+			clip-path: initial;
+			flex-basis: 40%;
+		}
+
 		&--1 {
 			background-image: url(../img/escapetheroom.jpg);
 			background-position-x: -6rem;
 			background-position-y: -10rem;
+
+			@include respond(phone) {
+				background-position-x: 0;
+				background-position-y: -5rem;
+			}
 		}
 		&--2 {
 			background-image: url(../img/secretsnowflake.jpg);
 			background-position-x: -6rem;
 			background-position-y: -25rem;
+
+			@include respond(phone) {
+				background-position-x: 0;
+				background-position-y: 0;
+			}
 		}
 		&--3 {
 			background-image: url(../img/2amdennys.jpg);
 			background-position-y: -18rem;
+
+			@include respond(phone) {
+				background-position-y: -5rem;
+			}
 		}
 		&--4 {
 			background-image: url(../img/seniorsendoff.jpg);
 			background-position-x: -6rem;
 			background-position-y: -8rem;
+
+			@include respond(phone) {
+				background-position-x: -2rem;
+				background-position-y: -3rem;
+			}
 		}
 	}
 }

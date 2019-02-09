@@ -269,6 +269,13 @@ body {
   position: relative;
   border-radius: 4px;
   overflow: hidden; }
+  @media (max-width: 37.5em) {
+    .card-sm {
+      height: 20rem; } }
+  @media (max-width: 37.5em) {
+    .card-sm {
+      display: flex;
+      flex-direction: column; } }
   .card-sm__text {
     text-align: right;
     position: absolute;
@@ -277,26 +284,55 @@ body {
     width: 35%;
     height: 100%;
     right: .6rem; }
+    @media (max-width: 37.5em) {
+      .card-sm__text {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: 40%;
+        right: 0;
+        flex-basis: 60%; } }
   .card-sm__background {
+    position: relative;
     height: 100%;
     width: 100%;
     clip-path: polygon(0 0, 65% 0, 50% 100%, 0 100%);
-    background-size: cover; }
+    background-size: cover;
+    background-repeat: no-repeat; }
+    @media (max-width: 37.5em) {
+      .card-sm__background {
+        clip-path: initial;
+        flex-basis: 40%; } }
     .card-sm__background--1 {
       background-image: url(../img/escapetheroom.jpg);
       background-position-x: -6rem;
       background-position-y: -10rem; }
+      @media (max-width: 37.5em) {
+        .card-sm__background--1 {
+          background-position-x: 0;
+          background-position-y: -5rem; } }
     .card-sm__background--2 {
       background-image: url(../img/secretsnowflake.jpg);
       background-position-x: -6rem;
       background-position-y: -25rem; }
+      @media (max-width: 37.5em) {
+        .card-sm__background--2 {
+          background-position-x: 0;
+          background-position-y: 0; } }
     .card-sm__background--3 {
       background-image: url(../img/2amdennys.jpg);
       background-position-y: -18rem; }
+      @media (max-width: 37.5em) {
+        .card-sm__background--3 {
+          background-position-y: -5rem; } }
     .card-sm__background--4 {
       background-image: url(../img/seniorsendoff.jpg);
       background-position-x: -6rem;
       background-position-y: -8rem; }
+      @media (max-width: 37.5em) {
+        .card-sm__background--4 {
+          background-position-x: -2rem;
+          background-position-y: -3rem; } }
 
 .modal {
   font-size: 78%;
