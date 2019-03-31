@@ -1,0 +1,37 @@
+.mobile-nav {
+
+	display: none;
+	@include respond(phone) {
+		display: block;
+	}
+
+	&__icon {
+		position: relative;
+		margin-top: 3.5rem;
+
+		&,
+		&::before,
+		&::after {
+			width: 4rem;
+			height: 3px;
+			background-color: $color-primary;
+			display: inline-block;
+			border-radius: 15%;
+		}
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+		}
+
+		&::before {
+			top: -1rem;
+		}
+
+		&::after {
+			top: 1rem;
+		}
+	}
+}

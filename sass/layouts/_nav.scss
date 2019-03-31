@@ -1,0 +1,69 @@
+.nav {
+	position: absolute;
+	z-index: 1000;
+	height: 8rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-around; // TODO: change to exact gutter width
+	align-items: center;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	text-align: center;
+
+	margin-top: 5.5rem;
+
+	@include respond(phone) {
+		justify-content: flex-start;
+		
+		width: auto; //100% width causes extra space on viewport
+		margin-top: 2rem;
+		margin-left: 2rem;
+	}
+
+	&__link:link,
+	&__link:visited {
+		color: $color-white;
+		padding: .6rem 0 .6rem 1rem;
+		width: 18rem;
+
+		font-size: 1.4rem;
+
+		text-decoration: none;
+		text-align: center;
+
+		// Flex ordering to put logo in middle
+		&:nth-child(1) { order: 1;}
+		&:nth-child(2) { order: 2;}
+		&:nth-child(4) { order: 4;}
+		&:nth-child(5) { order: 5;}
+
+		@include respond(phone) {
+			display: none;
+		}
+	}
+
+	&__link--button {
+		border: 2px solid $color-primary;
+		border-radius: 2px;	
+		padding-left: 1rem;
+	}
+
+	&__logo-box {
+		order: 3;
+	}
+
+	&__logo {
+		width: 30rem;
+		@include respond(phone) {
+			display: none;
+		}
+
+		&--mobile {
+			width: 5rem;
+			display:none;
+			@include respond(phone) {
+				display: initial;
+			}
+		}
+	}
+}

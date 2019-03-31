@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CoRE | Computers, Robotics, and Engineering</title>
+		<!-- Compiled and minified JavaScript -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<nav class="nav">
+			<!-- Logo for desktop/mobile -->
+			<div class="nav__logo-box">
+				<img class="nav__logo" alt="CoRE Logo" src="img/Logo_Circuit_Orig.svg">
+				<img class="nav__logo--mobile" alt="CoRE Logo" src="img/Logo_Simple_Sm.svg">
+			</div>
+			<!-- Nav Links -->
+			<a href="javascript:void(0)" class="nav__link" onclick="turnOnModal(event, 'dead')">photo gallery</a>
+			<a href="javascript:void(0)" class="nav__link" onclick="turnOnModal(event, 'dead')">project diaries</a>
+			<a href="javascript:void(0)" class="nav__link" onclick="turnOnModal(event, 'contacts')">contact us</a>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLScr1rTF9wp9-j8EjUkAzefnAF8hsoaL02Rh25fzOuPl4mp7Qg/viewform?c=0&w=1" class="nav__link nav__link--button">apply now</a>
+			<!-- Hamburger Menu -->
+			<a href="javascript:void(0);" class="mobile-nav" onclick="mobileNavToggle()">
+				<span class="mobile-nav__icon">&nbsp;</span>
+			</a>
+		</nav>
+
+		<div class="modal" id="contacts-modal">
+			<div class="contacts">
+				<div class="modal__top-row">
+					<h1 class="heading1 u-color-primary">contacts</h1>
+					<span class="modal__close">&larr;</span>
+				</div>
+				<div class="contacts__items">
+					<div class="contacts__item">
+						<img src="../img/contact-sam.jpeg" alt="Sam Kustin" class="contacts__img contacts__img--dash">
+						<div class="contacts__info">
+							<h2 class="heading2">Sam Kustin</h2>
+							<h3 class="heading3">President</h3>
+							<div class="contacts__links">
+								<a href="mailto:skustin1@binghamton.edu" class="contacts__link">skustin1@binghamton.edu</a>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="contacts__item">
+						<img src="../img/contact-michelle.jpg" alt="Michelle Tan" class="contacts__img contacts__img--dash">
+						<div class="contacts__info">
+							<h2 class="heading2">Michelle Tan</h2>
+							<h3 class="heading3">Vice President</h3>
+							<div class="contacts__links">
+								<a href="mailto:mtan23@binghamton.edu" class="contacts__link">mtan23@binghamton.edu</a>
+							</div>
+			
+						</div>
+					</div>
+					<div class="contacts__item">
+						<img src="../img/contact-henry.jpg" alt="Henry Burns" class="contacts__img contacts__img--dash">
+						<div class="contacts__info">
+							<h2 class="heading2">Henry Burns</h2>
+							<h3 class="heading3">Treasurer</h3>
+							<div class="contacts__links">
+								<a href="mailto:hburns3@binghamton.edu" class="contacts__link">hburns3@binghamton.edu</a>
+							</div>
+			
+						</div>
+					</div>
+					<div class="contacts__item">
+						<img src="../img/contact-mary.jpg" alt="Mary Mahoney" class="contacts__img contacts__img--dash">
+						<div class="contacts__info">
+							<h2 class="heading2">Mary Mahoney</h2>
+							<h3 class="heading3">Secretary</h3>
+							<div class="contacts__links">
+								<a href="mailto:mmahon10@binghamton.edu" class="contacts__link">mmahon10@binghamton.edu</a>
+							</div>
+			
+						</div>
+					</div>
+					<div class="contacts__item">
+						<img src="../img/contact-yu.jpeg" alt="Yu Xuan Wu" class="contacts__img contacts__img--dash">
+						<div class="contacts__info">
+							<h2 class="heading2">Yu Xuan Wu</h2>
+							<h3 class="heading3">Systems Administrator</h3>
+							<div class="contacts__links">
+								<a href="mailto:ywu148@binghamton.edu" class="contacts__link">ywu148@binghamton.edu</a>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__item">
+						<img src="../img/contact-nick.jpg" alt="Nicholas Stecyna" class="contacts__img contacts__img--dash">
+						<div class="contacts__info">
+							<h2 class="heading2">Nicholas Stecyna</h2>
+							<h3 class="heading3">CoREtex Manager</h3>
+							<div class="contacts__links">
+								<a href="mailto:nstecyn1@binghamton.edu" class="contacts__link">nstecyn1@binghamton.edu</a>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__item">
+						<img src="../img/contact-nicole.jpeg" alt="Nicole Ruiz Torres" class="contacts__img contacts__img--dash">
+						<div class="contacts__info">
+							<h2 class="heading2">Nicole Ruiz Torres</h2>
+							<h3 class="heading3">Freshman Representative</h3>
+							<div class="contacts__links">
+								<a href="mailto:nruizto1@binghamton.edu" class="contacts__link">nruizto1@binghamton.edu</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="dead-modal">
+			<div class="dead">
+				<div class="modal__top-row">
+					<h1 class="heading1 u-color-primary">woopsie!</h1>
+					<span class="modal__close">&larr;</span>
+				</div>
+				<div class="dead__contents">
+					<img src="../img/corebot.svg" class="dead__corevo" alt="CoREVO">
+					<div class="dead__text">
+						<h2 class="heading2">Oopsie!</h2>
+						<h3 class="heading3">
+							This page isn't current available right now, sorry!
+							<br/>
+							Our website is still under heavy construction, so hang tight!
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header class="header">
+			<div class="header__background"></div>
+			<div class="header__text">
+				<div class="header__headings">
+					<h1 class="heading1 heading1--primary u-color-gray">we are</h1>
+					<h1 class="heading1 heading1--secondary">the future.</h1>
+				</div>
+				<div class="header__cta-container">
+					<h4 class="heading4"><span class="u-color-primary">CO</span>MPUTERS, <span class="u-color-primary">R</span>OBOTICS, and <span class="u-color-primary">E</span>NGINEERING</h4>
+					<br/>
+					<h4 class="heading4">Binghamton University's own technology focused <br/>living-learning community.</h4>
+				</div>
+			</div>
+		</header>
+
+		<main>
+		<section class="section-about">
+			<h2 class="heading2 u-color-primary-dark u-margin-bottom-sm">We are...</h2>
+			<div class="about__container">
+				<div class="about__texts">
+					<h4 class="heading4 u-color-primary-dark">...a diverse community of motivated individuals.</h4>
+					<p class="paragraph">
+						CoRE is a special interest housing community with a collection of students that share common interests in <span class="u-color-primary-dark">Co</span>mputers, <span class="u-color-primary-dark">R</span>obotics, and <span class="u-color-primary-dark">E</span>ngineering. Together, we create an awesome and diverse student body with majors ranging from English and Geology to Computer Science and Mechanical Engineering.
+					</p>
+					<br/>
+					<h4 class="heading4 u-color-primary-dark">...really friendly!</h4>
+					<p class="paragraph u-margin-bottom-sm">
+						Why live on CoRE? Well, for starters, you get to live with people that are just like you! We all like the same things, share commons interests, and we can guarantee you will be making friends right away. Our residential floor is the most social and tight-knit floor on campus, hands down. Visitors are often shocked to see how social and friendly our floor really is. 
+					</p>
+					<!--
+					<p class="paragraph">
+						So if you like working with technology, and you want to have an impact around campus, CoRE is the place for you. We strive to promote techonological awarenes in ourselves, and in our community, and living on CoRE will take your experiences at BU to a whole new level. So please, take some time and check out our awesome traditions and events, read a little about our history, or just fill out an application and learn more about joining CoRE.
+					</p>
+		-->
+				</div>
+				<div class="about__images">
+					<img class="about__photo about__photo--1" src="../img/about-1.jpg" alt="A game of volleyball.">
+					<img class="about__photo about__photo--2" src="../img/about-2.jpg" alt="A Python workshop.">
+					<img class="about__photo about__photo--3" src="../img/about-3.jpg" alt="A project demo tabling.">
+				</div>
+			
+			</div>
+		</section>
+		<section class="section-traditions">
+			<h2 class="heading2">our events & traditions</h2>
+			<div class="card">
+				<div class="card__background card__background--2">&nbsp;</div>
+				<div class="card__text card__text--right">
+					<h3 class="heading3">CoRE Lore</h2>
+					<h4 class="heading4 u-color-gray">November 21st</h4>
+					<p class="paragraph">CoRE invites all of its alumni back to campus to eat and tell stories. Students and alumni network over dinner cooked by current CoRE members, and dessert brought by alumni. Current and past members speak about their experiences on CoRE and in industry. </p>
+				</div>
+				<div class="card__layer1 card__layer1--right"></div>
+				<div class="card__layer1-drop-shadow card__layer1-drop-shadow--right"></div>
+				<div class="card__layer2 card__layer2--right"></div>	
+			</div>
+			<h3 class="heading4">CoRE was founded in 1991, making us the oldest living-learning community in BU!</h3>
+			<div class="card">
+				<div class="card__background card__background--1"></div>
+				<div class="card__text card__text--left">
+					<h3 class="heading3">CoRE Hacks</h2>
+					<h4 class="heading4 u-color-gray">March 18th - 19th</h4>
+					<p class="paragraph">Every year, students in CoRE come up with and create their own technically inspired projects. From reimplementing the original DOOM's&reg; graphics engine, to uploading our own Snapchat&reg; filter, CoRE Hacks is an in-house event that brings our ideas to life!</p>
+				</div>
+				<div class="card__layer1 card__layer1--left"></div>
+				<div class="card__layer1-drop-shadow card__layer1-drop-shadow--left"></div>
+				<div class="card__layer2 card__layer2--left"></div>	
+			</div>
+			<h3 class="heading4">CoRE was responsible for bringing internet to the Dickinson Community...</h3>
+			<div class="card">
+				<div class="card__background card__background--3"></div>
+				<div class="card__text card__text--right">
+					<h3 class="heading3">CoreBQ</h2>
+					<h4 class="heading4 u-color-gray">May 5th</h4>
+					<p class="paragraph"> </p>
+				</div>
+				<div class="card__layer1 card__layer1--right"></div>
+				<div class="card__layer1-drop-shadow card__layer1-drop-shadow--right"></div>
+				<div class="card__layer2 card__layer2--right"></div>	
+			</div>
+		</section>
+		<section class="section-traditions-sub">
+			<h3 class="heading3 u-padding-top-md">...and a few more!</h4>
+			<div class="card-sm-container">
+				<div class="card-sm">
+					<div class="card-sm__background card-sm__background--1"></div>
+					<div class="card-sm__text">
+						<h4 class="heading4">Escape the Room</h4>
+						<h4 class="heading4 u-color-gray-dark">October</h4>
+						<p class="paragraph">The gang builds an Escape the Room. It goes horribly wrong.</p>
+					</div>
+				</div>
+				<div class="card-sm">
+					<div class="card-sm__background card-sm__background--2"></div>
+					<div class="card-sm__text">
+						<h4 class="heading4">Secret Snowflake</h4>
+						<h4 class="heading4 u-color-gray-dark">December</h4>
+						<p class="paragraph">Christmas wouldn't be complete without presents!</p>
+					</div>
+				</div>
+				<div class="card-sm">
+					<div class="card-sm__background card-sm__background--3"></div>
+					<div class="card-sm__text">
+						<h4 class="heading4">Midnight Denny's Runs</h4>
+						<h4 class="heading4 u-color-gray-dark">Whenever we want</h4>
+						<p class="paragraph">Yup.</p>
+					</div>
+				</div>
+				<div class="card-sm">
+					<div class="card-sm__background card-sm__background--4"></div>
+					<div class="card-sm__text">
+						<h4 class="heading4">Senior Sendoff</h4>
+						<h4 class="heading4 u-color-gray-dark">May</h4>
+						<p class="paragraph">Saying goodbye to our soon-to-be alumni!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="final-cta">
+			<div class="final-cta-container">
+				<div class="final-cta__cta">
+					<h2 class="heading2">What our residents have to say...</h2>
+					<p class="paragraph u-margin-bottom-md">We asked our residents what they thought about CoRE, totally adlibbed.</p>
+					<button class="cta">Apply for 2019-2020</button>
+				</div>
+				<div class="final-cta__video-container">
+					<iframe id="video" src="https://www.youtube-nocookie.com/embed/M31iebeWFuY?showinfo=0&rel=0&theme=light&disablekb=1" frameborder="0"></iframe>
+				</div>
+			</div>
+			<div class="final-cta-text">
+				<h3 class="heading3 u-color-white">We're not done yet!</h3>
+				<p class="paragraph u-color-white">Our new website is still under pretty-fication. Stay tuned for more!</p>
+			</div>
+		</section>
+		</main>
+
+		<script>
+			var contactModal = document.querySelector("#contacts-modal");
+			var deadModal = document.querySelector("#dead-modal");
+
+			var modals = {
+				"contacts": contactModal,
+				"dead": deadModal,
+			};
+
+			var currentModal = "";
+
+			Array.prototype.map.call(
+				document.getElementsByClassName("modal__close"), 
+				ele => {
+					ele.onclick = turnOffModal;
+				}
+			);
+
+			function turnOnModal(e, target) {
+				modals[target].classList.toggle("show-modal");
+				currentModal = target;
+				e.preventDefault();
+			}
+
+			function turnOffModal() {
+				modals[currentModal].classList.toggle("show-modal");
+				currentModal = "";
+			}
+
+		</script>
+
+		<footer class="footer">
+			<div class="footer__logo-box">
+				<img class="footer__logo" src="img/Logo_Simple_Orig.svg" alt="CoRE Logo" >
+			</div>
+			<div class="footer__content">
+				<ul class="footer__links">
+					<a href="#" class="footer__link">gallery</a>
+					<a href="#" class="footer__link">diaries</a>
+					<a href="#" class="footer__link" onclick="turnOnModal(event, 'contacts')">contact</a>
+					<a href="#" class="footer__link">apply</a>
+				</ul>
+				<p class="footer__copyright">
+					Built by <span class="footer__copyright-link">yu xuan wu</span>. <br\>Copyright © by <span class="footer__copyright-link">yu xuan wu</span>.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
