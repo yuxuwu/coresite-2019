@@ -4,7 +4,7 @@
 	"description": "CoRE's Homepage 2019 Edition",
 	"main": "app.js",
 	"scripts": {
-		"deploy": "gh-pages -d build",
+		"deploy": "node scripts/deploy.js",
 		"build:css": "node-sass-chokidar sass/ -o public/css/",
 		"watch:css": "npm run build:css && node-sass-chokidar sass/ -o public/css/ --watch --recursive",
 		"start": "node app.js"
