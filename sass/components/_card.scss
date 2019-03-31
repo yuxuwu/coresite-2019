@@ -196,6 +196,7 @@
 		width: 35%;
 		height: 100%;
 		right: .6rem;
+		top: 0;
 
 		@include respond(phone) {
 			text-align: center;
