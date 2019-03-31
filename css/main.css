@@ -283,7 +283,8 @@ body {
     flex-direction: column;
     width: 35%;
     height: 100%;
-    right: .6rem; }
+    right: .6rem;
+    top: 0; }
     @media (max-width: 37.5em) {
       .card-sm__text {
         text-align: center;
@@ -707,3 +708,7 @@ body {
       margin-top: 2rem; }
   .final-cta-text {
     text-align: center; }
+
+#video {
+  width: 56rem;
+  height: 31.5rem; }
