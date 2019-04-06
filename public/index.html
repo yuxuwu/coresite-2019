@@ -270,6 +270,23 @@
 		</section>
 		</main>
 
+		<footer class="footer">
+			<div class="footer__logo-box">
+				<img class="footer__logo" src="img/Logo_Simple_Orig.svg" alt="CoRE Logo" >
+			</div>
+			<div class="footer__content">
+				<ul class="footer__links">
+					<a href="javascript:void(0)" class="footer__link" onclick="turnOnModal(event, 'dead')">gallery</a>
+					<a href="javascript:void(0)" class="footer__link" onclick="turnOnModal(event, 'dead')">diaries</a>
+					<a href="javascript:void(0)" class="footer__link" onclick="turnOnModal(event, 'contacts')">contact</a>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLScr1rTF9wp9-j8EjUkAzefnAF8hsoaL02Rh25fzOuPl4mp7Qg/viewform?c=0&w=1" class="footer__link">apply</a>
+				</ul>
+				<p class="footer__copyright">
+					Built by <span class="footer__copyright-link">yu xuan wu</span>. <br\>Copyright © by <span class="footer__copyright-link">yu xuan wu</span>.
+				</p>
+			</div>
+		</footer>
+
 		<script>
 			var contactModal = document.querySelector("#contacts-modal");
 			var deadModal = document.querySelector("#dead-modal");
@@ -300,22 +317,5 @@
 			}
 
 		</script>
-
-		<footer class="footer">
-			<div class="footer__logo-box">
-				<img class="footer__logo" src="img/Logo_Simple_Orig.svg" alt="CoRE Logo" >
-			</div>
-			<div class="footer__content">
-				<ul class="footer__links">
-					<a href="#" class="footer__link">gallery</a>
-					<a href="#" class="footer__link">diaries</a>
-					<a href="#" class="footer__link" onclick="turnOnModal(event, 'contacts')">contact</a>
-					<a href="#" class="footer__link">apply</a>
-				</ul>
-				<p class="footer__copyright">
-					Built by <span class="footer__copyright-link">yu xuan wu</span>. <br\>Copyright © by <span class="footer__copyright-link">yu xuan wu</span>.
-				</p>
-			</div>
-		</footer>
 	</body>
 </html>
