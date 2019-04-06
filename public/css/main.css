@@ -52,6 +52,9 @@
 .u-txt-shadow {
   text-shadow: 2px 2px 4px #222 !important; }
 
+.u-reset-letter-spacing {
+  letter-spacing: initial !important; }
+
 .u-mobile-only {
   display: none !important; }
   @media (max-width: 37.5em) {
