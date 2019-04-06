@@ -21,3 +21,10 @@
 .u-padding-bottom-lg { padding-bottom: 6rem !important; }
 
 .u-txt-shadow { text-shadow: 2px 2px 4px #222 !important; }
+
+.u-mobile-only {
+	display: none !important;
+	@include respond(phone) { 
+		display: initial !important;
+	} 
+}

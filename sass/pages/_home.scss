@@ -94,6 +94,10 @@
 .section-traditions {
 	padding: 5rem 10rem 10rem 10rem;
 
+	@include respond(phone) {
+		padding: 5rem 3rem 5rem 3rem;
+	}
+
 	text-align: center;
 	background-image: linear-gradient(to bottom, rgba($color-primary-dark, .8), rgba($color-primary-darker, .5)), url("../img/1262.jpg");
 	background-repeat: repeat;
