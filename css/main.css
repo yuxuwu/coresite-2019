@@ -603,7 +603,8 @@ body {
       display: none; }
       @media (max-width: 37.5em) {
         .nav__logo--mobile {
-          display: initial; } }
+          display: initial;
+          display: none; } }
 
 .section-about {
   padding: 15rem 15rem;
