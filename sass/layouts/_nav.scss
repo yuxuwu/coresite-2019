@@ -63,6 +63,7 @@
 			display:none;
 			@include respond(phone) {
 				display: initial;
+				display:none;
 			}
 		}
 	}
